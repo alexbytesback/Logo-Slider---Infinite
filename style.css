@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: grid;
+  place-items: center; /* Center content vertically and horizontally */
+}
+
+h3 {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Adjust as needed */
+  color: #333; /* Text color */
+}
+
+.slider {
+  width: 100%; /* Full width */
+  height: fit-content;
+  overflow: hidden;
+}
+
+.logos {
+  width: fit-content; /* Content is as wide as necessary */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  animation: slide 25s linear infinite;
+}
+
+.logos img {
+  width: 110px; /* Logo size */
+  margin: 0 25px; /* Spacing between logos */
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%); /* Infinite scrolling animation */
+  }
+}
+
